@@ -5,7 +5,7 @@ library(stringdist)
 library(stats)
 library(ecodist)
 #setwd("/gpfs/fs2/scratch/nporesky/SBM")
-setwd("/Users/nateporesky/Library/CloudStorage/Box-Box/AndersonLabShared/Nathan_Poresky/SBM_Future")
+setwd("/Users/nateporesky/Library/CloudStorage/Box-Box/AndersonLabShared/Nathan_Poresky/SBM_Code")
 dir()
 
 #Randomizing Fasta Files
@@ -216,7 +216,7 @@ myMDSP1 <- read.csv("myMDSP1.csv")
 plot(myMDSP1$points.1,myMDSP1$points.2)
 
 myMDSP1.5 <- read.csv("myMDSP1.5.csv")
-plot(myMDSP1.5$points.1,myMDSP1.5$points.2)
+plot(myMDSP1$points.1,myMDSP1$points.2)
 
 myMDSP2 <- read.csv("myMDSP2.csv")
 plot(myMDSP2$points.1,myMDSP2$points.2)
@@ -224,6 +224,3 @@ plot(myMDSP2$points.1,myMDSP2$points.2)
 myMDSP3 <- read.csv("myMDSP3.csv")
 plot(myMDSP3$points.1,myMDSP3$points.2)
 
-pdf(file = "Overlay_plots.pdf")
-par( mfrow= c(2,2) )
-dev.off()
